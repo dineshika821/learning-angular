@@ -1,0 +1,26 @@
+
+<p>Start editing to see some magic happen :)</p>
+<h1>Map Size => {{sMap.size}}</h1>
+
+<div>
+  <div class="grid head" >
+    <div>Check</div>
+    <div>Code</div>
+    <div>Name</div>
+  </div>
+
+  <div *ngFor="let e of arr" class="grid body">
+    <div>
+      <input #ch [checked]="sMap.has(e.id)" (click)='onCheck(ch.checked, e)' type="checkbox" id="scales" name="scales"
+      ></div>
+    <div>{{e.id}}</div>
+    <div>{{e.name}}</div>
+  </div>
+  <button (click)='print()'>print</button>
+  <button (click)='clear()'>Clier</button>
+
+</div>
+
+<div *ngFor="let e of print()">
+  {{e | json}}
+</div>

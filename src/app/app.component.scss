@@ -1,0 +1,21 @@
+p {
+  font-family: Lato;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.head{
+  padding-bottom: 8px;
+  font-weight: bold;
+  background-color: gray;
+}
+
+.body{
+  padding-bottom: 4px;
+  font-weight: 100;
+  background-color: aliceblue;
+  border: 1px dotted rgb(187, 187, 187);
+}
